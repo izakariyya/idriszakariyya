@@ -4,127 +4,240 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Idris Zakariyya, Research Associate @ University of Glasgow</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             display: flex;
             background-color: #2C3E50;
             color: white;
+            line-height: 1.6;
         }
+
+        /* Sidebar Styles */
         .sidebar {
             width: 250px;
             background: #34495E;
             padding: 20px;
             height: 100vh;
             position: fixed;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
         }
+
+        .sidebar img {
+            width: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
         .sidebar h2 {
             color: #E74C3C;
+            text-align: center;
+            margin-bottom: 20px;
         }
+
         .sidebar ul {
             list-style: none;
             padding: 0;
         }
+
         .sidebar ul li {
             margin: 15px 0;
         }
+
         .sidebar ul li a {
             color: white;
             text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
         }
+
+        .sidebar ul li a:hover {
+            color: #E74C3C;
+        }
+
+        /* Content Styles */
         .content {
             margin-left: 270px;
             padding: 20px;
+            max-width: 800px;
         }
+
         section {
             margin-bottom: 50px;
+        }
+
+        h1, h2, h3 {
+            color: #E74C3C;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid #E74C3C;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        p, ul {
+            font-size: 1.1rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #E74C3C;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #E74C3C;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #C0392B;
         }
     </style>
 </head>
 <body>
+    <!-- Sidebar -->
     <div class="sidebar">
+        <img src="idris.jpg" alt="Idris Zakariyya">
         <h2>Idris Zakariyya</h2>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#outreach">Outreach</a></li>
+                <li><a href="#awards">Awards</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
 
-    <div class="sidebar">
-    <img src="idris.jpg" alt="Idris Zakariyya" style="width: 150px; border-radius: 50%; margin-bottom: 20px;">
-    <h2>Idris Zakariyya</h2>
-    <!-- Rest of sidebar -->
-</div>
-    
+    <!-- Main Content -->
     <div class="content">
+        <!-- Home Section -->
         <section id="home">
             <h1>Welcome to My Portfolio</h1>
-            <p> I am security and privacy researcher at University of Glasgow.</p>
+            <p>I am a Security and Privacy Researcher at the University of Glasgow, specializing in AI-driven solutions for healthcare and cybersecurity.</p>
+            <a href="#about" class="btn">Learn More About Me</a>
         </section>
 
+        <!-- About Section -->
         <section id="about">
-    <h2>About Me</h2>
-    
-    <!-- Professional Summary -->
-    <h3>Professional Background</h3>
-    <p>
-        I am a Research Associate at the University of Glasgow, specializing in Security and Privacy of AI. 
-        My work focuses on developing privacy preservation AI-driven systems for healthcare applications. 
-        Currently, I contribute to Biomedical AI lab where I design differential privacy algorithms 
-        for security monitoring.
-    </p>
+            <h2>About Me</h2>
+            <h3>Professional Background</h3>
+            <p>
+                I am a Research Associate at the University of Glasgow, specializing in Security and Privacy of AI. 
+                My work focuses on developing privacy-preserving AI-driven systems for healthcare applications. 
+                Currently, I contribute to the Biomedical AI lab, where I design differential privacy algorithms 
+                for security monitoring.
+            </p>
 
-    <!-- Academic Journey -->
-    <h3>Academic Journey</h3>
-    <p>
-        I hold a Ph.D. in Cybersecurity (Machine Learning) from Robert Gordon University, where my thesis centered on Robust, Effective and Efficient Machine
-        Learning Algorithms for Cybersecurity monitoring. Prior to this, I completed my M.Sc. in Computer Science 
-        at UNISZA Malaysia, researching network resource allocation in a simulated environment.
-    </p>
+            <h3>Academic Journey</h3>
+            <p>
+                I hold a Ph.D. in Cybersecurity (Machine Learning) from Robert Gordon University, where my thesis centered on Robust, Effective, and Efficient Machine
+                Learning Algorithms for Cybersecurity monitoring. Prior to this, I completed my M.Sc. in Computer Science 
+                at UNISZA Malaysia, researching network resource allocation in a simulated environment.
+            </p>
 
-    <!-- Research Interests -->
-    <h3>Research Focus</h3>
-    <ul>
-        <li>🔬 Security of Machine Learning </li>
-        <li>🧠 Differential Privacy </li>
-        <li>🤖 Cybersecurity Monitoring</li>
-    </ul>
+            <h3>Research Focus</h3>
+            <ul>
+                <li>🔬 Security of Machine Learning</li>
+                <li>🧠 Differential Privacy</li>
+                <li>🤖 Cybersecurity Monitoring</li>
+            </ul>
 
-    <!-- Technical Skills -->
-    <h3>Technical Expertise</h3>
-    <p>
-        <strong>Tools & Languages:</strong> Python, C++, SQL, ART, ROS, PyTorch, OpenCV, MATLAB<br>
-        <strong>Domains:</strong> Cryptography and Security, Federated Learning, Cybersecurity<br>
-        <strong>Collaboration:</strong> Git
-    </p>
+            <h3>Technical Expertise</h3>
+            <p>
+                <strong>Tools & Languages:</strong> Python, C++, SQL, ART, ROS, PyTorch, OpenCV, MATLAB<br>
+                <strong>Domains:</strong> AI Security, Federated Learning, Cybersecurity<br>
+                <strong>Collaboration:</strong> Git
+            </p>
 
-    <!-- Personal Touch -->
-    <h3>Beyond Research</h3>
-    <p>
-        When I’m not optimizing machine learning in a private manner, I enjoy travelling. I’m passionate about networking.
-    </p>
-</section>
+            <h3>Beyond Research</h3>
+            <p>
+                When I’m not optimizing machine learning in a private manner, I enjoy traveling. I’m passionate about networking and exploring new technologies.
+            </p>
+        </section>
 
+        <!-- Projects Section -->
         <section id="projects">
             <h2>Projects</h2>
-            <p> Leading the development of multimodal AI-based security solutions for healthcare applications (EPSRC project, privacy preservation frameworks for healthcare applications).</p>
-            
-            <p> Leading the development of optimized and AI-based security solutions project on edge devices (MAISE PETRAS Project.</p>
-            
+            <h3>Multimodal AI-Based Security Solutions</h3>
+            <p>Leading the development of multimodal AI-based security solutions for healthcare applications (EPSRC project, privacy preservation frameworks for healthcare applications).</p>
+
+            <h3>AI-Based Security Solutions for Edge Devices</h3>
+            <p>Leading the development of optimized and AI-based security solutions for edge devices (MAISE PETRAS Project).</p>
         </section>
 
+        <!-- Publications Section -->
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li><a href="#">"Title of Publication 1"</a> - Journal Name, Year</li>
+                <li><a href="#">"Title of Publication 2"</a> - Journal Name, Year</li>
+                <li><a href="#">"Title of Publication 3"</a> - Journal Name, Year</li>
+            </ul>
+        </section>
+
+        <!-- Outreach Section -->
+        <section id="outreach">
+            <h2>Scientific Outreach</h2>
+            <ul>
+                <li><a href="#">Public Lecture: "Title of Lecture"</a> - Event Name, Year</li>
+                <li><a href="#">Workshop: "Title of Workshop"</a> - Event Name, Year</li>
+                <li><a href="#">Article: "Title of Article"</a> - Publication Name, Year</li>
+            </ul>
+        </section>
+
+        <!-- Awards Section -->
+        <section id="awards">
+            <h2>Awards</h2>
+            <ul>
+                <li><strong>Best Paper Award</strong> - Conference Name, Year</li>
+                <li><strong>Research Excellence Award</strong> - University of Glasgow, Year</li>
+                <li><strong>Outstanding Researcher</strong> - Organization Name, Year</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact</h2>
             <p>Room 409, School of Computing Science, University of Glasgow, G12 8QQ.</p>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
         </section>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
